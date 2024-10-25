@@ -76,19 +76,10 @@
 /* STLSoft 1.9 check */
 
 #if !defined(_STLSOFT_VER) || \
-    _STLSOFT_VER < 0x010983ff
+    _STLSOFT_VER < 0x010b0153
 
-# error Requires STLSoft 1.9.131, or later. (www.stlsoft.org)
+# error Requires STLSoft 1.11.1 (alpha 19), or later
 #endif /* STLSoft version */
-
-/* STLSoft 1.10 check */
-
-#if _STLSOFT_VER < 0x010a0000 && \
-    defined(_STLSOFT_1_10_VER) && \
-    _STLSOFT_1_10_VER < 0x010a0113
-
-# error If you're using STLSoft 1.10 alpha you must use at least version 1.10.1 alpha 19
-#endif /* STLSoft 1.10.1 alpha 1 - alpha 8 */
 
 #if defined(__cplusplus) && \
     defined(_STLSOFT_NO_NAMESPACE)

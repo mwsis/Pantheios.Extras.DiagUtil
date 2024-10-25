@@ -38,6 +38,7 @@ macro(define_target_compile_options target_name)
 	)
 endmacro(define_target_compile_options)
 
+
 function(define_automated_test_program program_name entry_point_source_name)
 
 	add_executable(${program_name}
